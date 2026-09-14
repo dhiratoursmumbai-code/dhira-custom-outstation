@@ -1,654 +1,954 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-          "secondary-container": "#fea619",
-          "error-container": "#ffdad6",
-          "on-secondary-container": "#684000",
-          "primary-fixed-dim": "#b8c7e6",
-          "on-error-container": "#93000a",
-          "on-surface-variant": "#44474d",
-          "primary-fixed": "#d7e3ff",
-          "background": "#f7f9fb",
-          "on-tertiary": "#ffffff",
-          "inverse-surface": "#2d3133",
-          "on-primary": "#ffffff",
-          "on-primary-fixed-variant": "#394761",
-          "surface-container": "#eceef0",
-          "primary": "#000412",
-          "surface-bright": "#f7f9fb",
-          "secondary-fixed-dim": "#ffb95f",
-          "surface-container-high": "#e6e8ea",
-          "error": "#ba1a1a",
-          "outline": "#75777e",
-          "on-surface": "#191c1e",
-          "on-tertiary-fixed-variant": "#004395",
-          "surface-container-highest": "#e0e3e5",
-          "secondary": "#855300",
-          "inverse-on-surface": "#eff1f3",
-          "surface-dim": "#d8dadc",
-          "outline-variant": "#c5c6ce",
-          "on-error": "#ffffff",
-          "surface-variant": "#e0e3e5",
-          "on-background": "#191c1e",
-          "on-tertiary-container": "#3b82f6",
-          "primary-container": "#0f1e36",
-          "secondary-fixed": "#ffddb8",
-          "tertiary": "#000411",
-          "surface": "#f7f9fb",
-          "tertiary-fixed-dim": "#adc6ff",
-          "inverse-primary": "#b8c7e6",
-          "surface-tint": "#515f7a",
-          "on-primary-fixed": "#0c1b33",
-          "tertiary-container": "#001c46",
-          "on-secondary-fixed": "#2a1700",
-          "tertiary-fixed": "#d8e2ff",
-          "surface-container-low": "#f2f4f6",
-          "on-secondary-fixed-variant": "#653e00",
-          "surface-container-lowest": "#ffffff",
-          "on-secondary": "#ffffff",
-          "on-tertiary-fixed": "#001a42",
-          "on-primary-container": "#7886a3"
-        },
-        "borderRadius": {
-          "DEFAULT": "0.25rem",
-          "lg": "0.5rem",
-          "xl": "0.75rem",
-          "full": "9999px"
-        },
-        "spacing": {
-          "space-xl": "2.5rem",
-          "space-xs": "0.25rem",
-          "space-sm": "0.5rem",
-          "gutter": "1.5rem",
-          "space-md": "1rem",
-          "space-lg": "1.5rem",
-          "margin": "2rem"
-        },
-        "fontFamily": {
-          "label-lg": ["Plus Jakarta Sans"],
-          "headline-sm": ["Plus Jakarta Sans"],
-          "label-sm": ["Plus Jakarta Sans"],
-          "body-sm": ["Plus Jakarta Sans"],
-          "body-md": ["Plus Jakarta Sans"],
-          "body-lg": ["Plus Jakarta Sans"],
-          "headline-lg": ["Plus Jakarta Sans"],
-          "headline-md": ["Plus Jakarta Sans"],
-          "label-md": ["Plus Jakarta Sans"],
-          "headline-xl": ["Plus Jakarta Sans"]
-        },
-        "fontSize": {
-          "label-lg": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
-          "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
-          "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
-          "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
-          "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-          "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
-          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
-          "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-          "label-md": ["14px", {"lineHeight": "20px", "fontWeight": "500"}],
-          "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dhira Tours &amp; Travels - Mumbai Tempo Traveller &amp; Car Hire Specialist</title>
+<!-- Google Fonts: Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              navy: '#0f1e36',
+              navyDark: '#091322',
+              navyLight: '#182b4a',
+              gold: '#e59700',
+              goldHover: '#c88300',
+              surface: '#f8fafc',
+              border: '#e2e8f0',
+              whatsapp: '#25D366',
+              whatsappHover: '#20bd5a'
+            }
+          }
         }
       }
     }
-  }
-</script><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>
-    body {
-      min-height: max(884px, 100dvh);
+  </script>
+<style>
+    /* Smooth tab switching */
+    .page-section {
+      display: none;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+    .page-section.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .table-container::-webkit-scrollbar {
+      height: 6px;
+    }
+    .table-container::-webkit-scrollbar-thumb {
+      background-color: #cbd5e1;
+      border-radius: 9999px;
     }
   </style>
-  </head><body class="bg-surface font-body-md flex flex-col min-h-screen text-on-surface"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl pt-safe"><div class="h-16 px-gutter flex items-center justify-between"><button aria-label="Go back" class="w-10 h-10 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:bg-surface-container-high transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="text-headline-sm font-headline-sm font-semibold tracking-tight text-on-surface truncate px-2 text-center flex-1">Custom Outstation Package</h1><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div></header><main class="flex flex-col relative w-full px-gutter pt-16 pb-safe bg-surface flex-grow"><div class="flex flex-col w-full pb-8">
-<!-- System Status Banner -->
-<section class="w-full pt-2 pb-4">
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="relative flex h-3 w-3">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
-<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
-</span>
-<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Diagnostics Operational</span>
+</head>
+<body class="bg-slate-900 text-slate-800 flex justify-center min-h-screen antialiased font-sans selection:bg-[#e59700] selection:text-slate-950">
+<!-- Production App Container -->
+<div class="w-full max-w-[480px] bg-[#f8fafc] min-h-screen shadow-2xl relative flex flex-col pb-24 overflow-x-hidden">
+<!-- TOP EMERGENCY/PROMO STRIP -->
+<div class="bg-[#091322] text-white text-[11px] py-1.5 px-4 flex items-center justify-between border-b border-slate-800/80 tracking-wide font-medium">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+<span class="text-slate-300">Mumbai Chauffeurs on Duty 24/7</span>
 </div>
-<span class="bg-surface-container-high px-2.5 py-0.5 rounded-full font-label-sm text-label-sm text-on-surface-variant font-medium">v3.4 Production</span>
+<a class="text-[#e59700] font-bold hover:underline flex items-center gap-1" href="tel:+918450935225">
+<i class="w-3 h-3" data-lucide="phone"></i>
+<span>+91 8450935225</span>
+</a>
 </div>
+<!-- GLOBAL PERSISTENT APP HEADER -->
+<header class="sticky top-0 z-40 bg-[#0f1e36] text-white px-4 py-3 flex items-center justify-between shadow-md border-b border-slate-700/60">
+<div class="flex items-center gap-2.5 cursor-pointer" onclick="switchTab('home')">
+<div class="w-9 h-9 rounded-xl bg-gradient-to-br from-[#e59700] to-amber-600 flex items-center justify-center text-slate-950 shadow-md font-black text-xl">
+          D
+        </div>
 <div>
-<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Instant Connect Diagnostics</h2>
-<div class="flex items-center gap-1.5 mt-0.5">
-<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
-<span class="font-body-md text-body-md font-semibold text-primary tracking-tight">+91 8450935225</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant ml-1">· Dhira Tours &amp; Travels</span>
+<div class="flex items-center gap-1 font-extrabold tracking-wider text-base leading-tight text-white">
+<span>DHIRA</span>
+<span class="text-[#e59700] tracking-normal font-black text-sm">TOURS &amp; TRAVELS</span>
+</div>
+<p class="text-[9px] font-semibold text-amber-300/90 tracking-wider uppercase">Mumbai Tempo Traveller &amp; Fleet Specialist</p>
 </div>
 </div>
-<!-- Trust Badge Strip -->
-<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center justify-between">
 <div class="flex items-center gap-2">
-<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
-<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<a class="w-8 h-8 rounded-full bg-slate-800 text-[#e59700] border border-slate-700 flex items-center justify-center hover:bg-slate-700 transition" href="tel:+918450935225" title="Call Now">
+<i class="w-4 h-4" data-lucide="phone"></i>
+</a>
+<a class="w-8 h-8 rounded-full bg-[#25D366] text-white flex items-center justify-center hover:bg-[#20bd5a] transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20I%20want%20to%20inquire%20about%20Force%20Tempo%20Traveller%20hire%20in%20Mumbai" target="_blank" title="WhatsApp Us">
+<i class="w-4 h-4 fill-white" data-lucide="message-circle"></i>
+</a>
 </div>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm font-semibold text-on-surface">24/7 Mumbai Dispatch Active</span>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Fleet Hub: Andheri East / Dadar</span>
+</header>
+<!-- ================================================================= -->
+<!-- TAB 1: HOME (FEATURED PHOTO CARDS + ROUTES + UPI) -->
+<!-- ================================================================= -->
+<section class="page-section active" id="view-home">
+<!-- Hero Banner -->
+<div class="p-4">
+<div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#0f1e36] via-[#152745] to-[#091322] text-white p-5 shadow-xl border border-slate-700/50">
+<div class="absolute -right-8 -bottom-8 w-44 h-44 rounded-full bg-[#e59700]/15 blur-2xl pointer-events-none"></div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#e59700]/20 text-amber-300 text-xs font-bold mb-3 border border-[#e59700]/30">
+<i class="w-3.5 h-3.5 text-[#e59700]" data-lucide="badge-check"></i>
+<span>Govt. Verified Commercial Fleet</span>
 </div>
+<h1 class="text-xl sm:text-2xl font-black leading-tight tracking-tight mb-2">
+            Luxury Force Tempo Travellers in Mumbai
+          </h1>
+<p class="text-slate-300 text-xs leading-relaxed max-w-[340px]">
+            Premium 12, 17, 20 &amp; 26 Seaters + Next-Gen Force Urbania for Outstation Pilgrimage, Family Vacations &amp; Corporate Picnics.
+          </p>
+<div class="mt-4 flex flex-wrap items-center gap-2">
+<button class="bg-[#e59700] hover:bg-[#c88300] text-slate-950 font-extrabold text-xs px-3.5 py-2.5 rounded-xl transition flex items-center gap-1.5 shadow-md" onclick="switchTab('tariff')">
+<i class="w-3.5 h-3.5" data-lucide="table"></i>
+<span>View Tariff Sheet</span>
+</button>
+<a class="bg-white/10 hover:bg-white/20 text-white font-bold text-xs px-3.5 py-2.5 rounded-xl transition border border-white/25 flex items-center gap-1.5" href="tel:+918450935225">
+<i class="w-3.5 h-3.5 text-[#e59700]" data-lucide="phone-call"></i>
+<span>+91 8450935225</span>
+</a>
+</div>
+<!-- Quick badges -->
+<div class="mt-4 pt-3 border-t border-slate-700/60 grid grid-cols-3 text-center gap-1 text-[11px] text-slate-300"><div class="flex flex-col items-center font-semibold"><span class="text-[#e59700] font-black text-xs">24/7</span><span>Mumbai Dispatch</span></div><div class="flex flex-col items-center font-semibold border-x border-slate-700"><span class="text-[#e59700] font-black text-xs">Verified</span><span>Driver Dossier</span></div><div class="flex flex-col items-center font-semibold"><span class="text-[#e59700] font-black text-xs">100%</span><span>Sanitized &amp; Chilled</span></div></div>
+</div>
+</div>
+<!-- SECTION: FORCE TEMPO TRAVELLER PHOTO CARDS -->
+<div class="px-4 pb-2">
+<div class="flex items-center justify-between mb-3">
+<div>
+<h2 class="text-base font-extrabold text-slate-900">Force Luxury Fleet &amp; Rates</h2>
+<p class="text-[11px] text-slate-500">Pick from our premium fleet based in Borivali, Mumbai</p>
+</div>
+<button class="text-xs font-bold text-[#e59700] flex items-center gap-0.5" onclick="switchTab('tariff')">
+<span>Rate Chart</span>
+<i class="w-3.5 h-3.5" data-lucide="chevron-right"></i>
+</button>
+</div>
+<div class="space-y-4">
+<!-- CARD 1: 12 SEATER LUXURY -->
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition">
+<!-- Photo banner with tag -->
+<div class="relative h-44 w-full bg-slate-900 overflow-hidden">
+<img alt="Force Tempo Traveller 12 Seater Luxury" class="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBc58JkOr-DEDI5vcX5-_oBHBSqgPIDFbyoaBdfwb8UEHPtFyx74OC10LgVX1uaC9-zcVicnDJA2q3BHn8R_eJ3NBo9r6von51-AmqKnvHIUsQU_wGyHyLwV85bcZ7rYHyNC7MXv2Ube1Zi5HHjPnbN8q_8LY5bFqkFnfybFgiMLDbrCFN4-Cs4QiQzJlQqngAqdCalIHIWTPeqwq5fye3QiLo7iK5APVgaLnREPNgs3x-dbP2BKgKgdQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="bg-[#e59700] text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow">
+                  Family Choice
+                </span>
+<span class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-full border border-white/20">
+                  12 Seater + Chauffeur
+                </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<h3 class="text-sm font-extrabold text-white leading-tight drop-shadow">Force Tempo Traveller 12S Luxury</h3>
+<p class="text-[11px] text-amber-300 font-medium">Maharaja 2x1 Pushback Configuration</p>
+</div>
+<div class="bg-slate-900/80 rounded-xl p-3 border border-slate-700/80 space-y-2.5"><div class="flex items-center justify-between"><div><span class="text-[10px] text-slate-400 block font-medium">Official Payee Name:</span><span class="text-xs font-bold text-white tracking-wide">Dhira Tours &amp; Travels / Devang Dhanaliya</span></div><span class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono font-bold">Verified Merchant</span></div><div class="flex items-center justify-between pt-1 border-t border-slate-800"><div><span class="text-[10px] text-slate-400 block font-medium">Official UPI VPA:</span><span class="text-xs font-mono font-bold text-[#e59700] tracking-wide select-all">dhanaliyadevang1995@okhdfcbank</span></div><button class="bg-[#e59700] hover:bg-[#c88300] text-slate-950 px-2.5 py-1.5 rounded-lg text-[10px] font-extrabold flex items-center gap-1 transition" id="copyUpiHomeBtn" onclick="copyUpiTextHome()"><i class="w-3 h-3" data-lucide="copy"></i><span>Copy UPI ID</span></button></div><div class="flex items-center justify-between pt-1 text-[10px] text-slate-400"><div class="flex gap-1.5 font-bold text-[9px]"><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">GPay</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">PhonePe</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">Paytm</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">BHIM</span></div><div class="flex items-center gap-1"><span class="text-slate-300 font-semibold">Advance to lock:</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹2,000</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹3,000</span></div></div></div>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-3.5 space-y-3">
+<p class="text-xs text-slate-600 leading-snug">
+                Luxury 2x1 Maharaja pushback seats, chilled dual AC, stereo music system, spacious rear luggage space &amp; clean sanitized curtains.
+              </p>
+<!-- Amenities Pills -->
+<div class="grid grid-cols-4 gap-1.5 text-center text-[10px] font-semibold text-slate-700">
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-blue-600 mb-0.5" data-lucide="wind"></i>
+<span>Dual AC</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-amber-600 mb-0.5" data-lucide="armchair"></i>
+<span>2x1 Pushback</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-emerald-600 mb-0.5" data-lucide="music"></i>
+<span>Audio System</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-purple-600 mb-0.5" data-lucide="luggage"></i>
+<span>Boot Space</span>
+</div>
+</div>
+<!-- Pricing Highlight Box -->
+<div class="bg-amber-50/70 rounded-xl p-2.5 border border-amber-200/80 flex items-center justify-between text-xs"><div>
+<span class="text-slate-500 block text-[10px]">Local Package (8h / 80km)</span>
+<strong class="text-slate-900 font-extrabold text-sm">₹6,500</strong>
 </div>
 <div class="text-right">
-<span class="font-label-sm text-label-sm font-semibold text-secondary-container bg-primary-container px-2 py-1 rounded">SLA &lt; 2 mins</span>
+<span class="text-slate-500 block text-[10px]">Driver Allowance</span>
+<strong class="text-slate-900 font-bold">₹1,200 / Day</strong>
+</div></div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20I%20want%20to%20book%20the%20Force%20Tempo%20Traveller%2012%20Seater%20Luxury%20(%E2%82%B924%2Fkm%2C%20Local%20%E2%82%B96500)." target="_blank">
+<i class="w-4 h-4 fill-white" data-lucide="message-circle"></i>
+<span>WhatsApp</span>
+</a>
+<a class="bg-[#0f1e36] hover:bg-slate-900 text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="tel:+918450935225">
+<i class="w-3.5 h-3.5 text-[#e59700]" data-lucide="phone"></i>
+<span>Call Chauffeur</span>
+</a>
 </div>
 </div>
 </div>
-</section>
-<!-- Interactive Sandbox Simulator Controls -->
-<section class="w-full pb-4">
-<div class="bg-primary-container text-on-primary rounded-xl p-space-md shadow-md flex flex-col gap-3">
+<!-- CARD 2: 17 SEATER TEMPO TRAVELLER -->
+<div class="bg-white rounded-2xl overflow-hidden border-2 border-[#e59700] shadow-md relative">
+<div class="absolute top-0 right-0 bg-[#e59700] text-slate-950 text-[10px] font-black uppercase px-3 py-0.5 rounded-bl-lg z-10 shadow">
+              MOST POPULAR
+            </div>
+<!-- Photo banner with tag -->
+<div class="relative h-44 w-full bg-slate-900 overflow-hidden">
+<img alt="Force Tempo Traveller 17 Seater" class="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAi6WrB_gDuaZNsN6KFcDhAduJCYc0Obx7RtAIe0LefyyR4yAfrvC87ROZzVPpDFCEN2dRzFckkEHslnKUkvw_XqBNZ8Te6x3PvlSPIcFqNezdhD6MVYmaFH7JeSqwaPkah7IMTjybpjW_8Qho_kZV2ABZUpDETjs_LleadNk4t8-gFFfV2vSWQLgUezLPu1e0UbX1NVqiqjUfNUPHk8X7v3kgBZaU0jawO-iyItq2fb-kbw-_M61aSEQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+<div class="absolute top-3 left-3">
+<span class="bg-black/70 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-full border border-white/20">
+                  17 Seater Recliner
+                </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<h3 class="text-sm font-extrabold text-white leading-tight drop-shadow">Force Tempo Traveller 17 Seater</h3>
+<p class="text-[11px] text-amber-300 font-medium">Best for Shirdi • Mahabaleshwar • Goa</p>
+</div>
+<div class="bg-slate-900/80 rounded-xl p-3 border border-slate-700/80 space-y-2.5"><div class="flex items-center justify-between"><div><span class="text-[10px] text-slate-400 block font-medium">Official Payee Name:</span><span class="text-xs font-bold text-white tracking-wide">Dhira Tours &amp; Travels / Devang Dhanaliya</span></div><span class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono font-bold">Verified Merchant</span></div><div class="flex items-center justify-between pt-1 border-t border-slate-800"><div><span class="text-[10px] text-slate-400 block font-medium">Official UPI VPA:</span><span class="text-xs font-mono font-bold text-[#e59700] tracking-wide select-all">dhanaliyadevang1995@okhdfcbank</span></div><button class="bg-[#e59700] hover:bg-[#c88300] text-slate-950 px-2.5 py-1.5 rounded-lg text-[10px] font-extrabold flex items-center gap-1 transition" id="copyUpiHomeBtn" onclick="copyUpiTextHome()"><i class="w-3 h-3" data-lucide="copy"></i><span>Copy UPI ID</span></button></div><div class="flex items-center justify-between pt-1 text-[10px] text-slate-400"><div class="flex gap-1.5 font-bold text-[9px]"><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">GPay</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">PhonePe</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">Paytm</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">BHIM</span></div><div class="flex items-center gap-1"><span class="text-slate-300 font-semibold">Advance to lock:</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹2,000</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹3,000</span></div></div></div>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-3.5 space-y-3">
+<p class="text-xs text-slate-600 leading-snug">
+                Most popular for Corporate outings &amp; Family Pilgrimage (Shirdi, Kolhapur, Trimbakeshwar). Equipped with 2x1 recliners, LED screen &amp; cold ice box.
+              </p>
+<!-- Amenities Pills -->
+<div class="grid grid-cols-4 gap-1.5 text-center text-[10px] font-semibold text-slate-700">
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-indigo-600 mb-0.5" data-lucide="tv"></i>
+<span>LED Screen</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-amber-600 mb-0.5" data-lucide="armchair"></i>
+<span>2x1 Recliner</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-sky-600 mb-0.5" data-lucide="snowflake"></i>
+<span>Chilled AC</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-amber-500 mb-0.5" data-lucide="zap"></i>
+<span>Ice Box/Kit</span>
+</div>
+</div>
+<!-- Pricing Highlight Box -->
+<div class="bg-amber-50/70 rounded-xl p-2.5 border border-amber-200/80 flex items-center justify-between text-xs"><div>
+<span class="text-slate-500 block text-[10px]">Local Package (8h / 80km)</span>
+<strong class="text-slate-900 font-extrabold text-sm">₹7,200</strong>
+</div>
+<div class="text-right">
+<span class="text-slate-500 block text-[10px]">Driver Allowance</span>
+<strong class="text-slate-900 font-bold">₹1,200 / Day</strong>
+</div></div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20I%20want%20to%20book%20the%20Force%20Tempo%20Traveller%2017%20Seater%20(%E2%82%B926%2Fkm%2C%20Local%20%E2%82%B97200)." target="_blank">
+<i class="w-4 h-4 fill-white" data-lucide="message-circle"></i>
+<span>WhatsApp</span>
+</a>
+<a class="bg-[#0f1e36] hover:bg-slate-900 text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="tel:+918450935225">
+<i class="w-3.5 h-3.5 text-[#e59700]" data-lucide="phone"></i>
+<span>Call Chauffeur</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 3: FORCE URBANIA 13/17 SEATER -->
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition">
+<!-- Photo banner with tag -->
+<div class="relative h-44 w-full bg-slate-900 overflow-hidden">
+<img alt="Force Urbania Executive" class="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZfrA-gJP4gcsS5TvO0FMeexw76GKoEDeeFRcA8ZJPl4ps4kBx8K2xkoryx2m18jup3ICEOxY2w9iFc2FKhL5kQCzkn5MLm0GwgkAGhAMcOPLtpuHTFecXZEc_3Fz9yo_yjDTfozuRGTe-DhrzBn6PwkqMDqoI9wK0bJ1Hos6E8Znd6MK0_eExjGbYuxVOdjc7Aez3Z8qzYv4vm42KqS4HqvO2gcmhzVVVvL4kZZw_WV1epVFXl-nZ9w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="bg-blue-600 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow">
+                  Next-Gen VIP
+                </span>
+<span class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-full border border-white/20">
+                  13 / 17 Seater
+                </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<h3 class="text-sm font-extrabold text-white leading-tight drop-shadow">Force Urbania Executive</h3>
+<p class="text-[11px] text-blue-300 font-medium">World-Class European Ride Quality</p>
+</div>
+<div class="bg-slate-900/80 rounded-xl p-3 border border-slate-700/80 space-y-2.5"><div class="flex items-center justify-between"><div><span class="text-[10px] text-slate-400 block font-medium">Official Payee Name:</span><span class="text-xs font-bold text-white tracking-wide">Dhira Tours &amp; Travels / Devang Dhanaliya</span></div><span class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono font-bold">Verified Merchant</span></div><div class="flex items-center justify-between pt-1 border-t border-slate-800"><div><span class="text-[10px] text-slate-400 block font-medium">Official UPI VPA:</span><span class="text-xs font-mono font-bold text-[#e59700] tracking-wide select-all">dhanaliyadevang1995@okhdfcbank</span></div><button class="bg-[#e59700] hover:bg-[#c88300] text-slate-950 px-2.5 py-1.5 rounded-lg text-[10px] font-extrabold flex items-center gap-1 transition" id="copyUpiHomeBtn" onclick="copyUpiTextHome()"><i class="w-3 h-3" data-lucide="copy"></i><span>Copy UPI ID</span></button></div><div class="flex items-center justify-between pt-1 text-[10px] text-slate-400"><div class="flex gap-1.5 font-bold text-[9px]"><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">GPay</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">PhonePe</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">Paytm</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">BHIM</span></div><div class="flex items-center gap-1"><span class="text-slate-300 font-semibold">Advance to lock:</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹2,000</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹3,000</span></div></div></div>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-3.5 space-y-3">
+<p class="text-xs text-slate-600 leading-snug">
+                World-class executive comfort, panoramic sealed windows, individual aircraft-style AC vents, personal mobile fast chargers &amp; whisper-silent cabin.
+              </p>
+<!-- Amenities Pills -->
+<div class="grid grid-cols-4 gap-1.5 text-center text-[10px] font-semibold text-slate-700">
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-emerald-600 mb-0.5" data-lucide="smartphone-charging"></i>
+<span>USB at Seat</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-blue-600 mb-0.5" data-lucide="maximize"></i>
+<span>Panoramic</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-indigo-600 mb-0.5" data-lucide="volume-x"></i>
+<span>Silent Cabin</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-rose-600 mb-0.5" data-lucide="airplay"></i>
+<span>Indiv. Vents</span>
+</div>
+</div>
+<!-- Pricing Highlight Box -->
+<div class="bg-amber-50/70 rounded-xl p-2.5 border border-amber-200/80 flex items-center justify-between text-xs"><div>
+<span class="text-slate-500 block text-[10px]">Local Package (8h / 80km)</span>
+<strong class="text-slate-900 font-extrabold text-sm">₹7,800</strong>
+</div>
+<div class="text-right">
+<span class="text-slate-500 block text-[10px]">Driver Allowance</span>
+<strong class="text-slate-900 font-bold">₹1,200 / Day</strong>
+</div></div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20I%20want%20to%20book%20the%20Force%20Urbania%20Executive%2013-17S%20(%E2%82%B929%2Fkm%2C%20Local%20%E2%82%B97800)." target="_blank">
+<i class="w-4 h-4 fill-white" data-lucide="message-circle"></i>
+<span>WhatsApp</span>
+</a>
+<a class="bg-[#0f1e36] hover:bg-slate-900 text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="tel:+918450935225">
+<i class="w-3.5 h-3.5 text-[#e59700]" data-lucide="phone"></i>
+<span>Call Chauffeur</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 4: 20 & 26 SEATER LARGE GROUP -->
+<div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition">
+<!-- Photo banner with tag -->
+<div class="relative h-44 w-full bg-slate-900 overflow-hidden">
+<img alt="Force Tempo Traveller 20 &amp; 26 Seater Large Group" class="w-full h-full object-cover object-center opacity-90 hover:scale-105 transition duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkEm_idx2r496agB1_mw_Q6OXLKL-HNKl6g18Z0FcoRSzZqtBpRuHvJJWeLOw2pTZAERFoPg1IZPNto1vwT8avQsEBMVspB6Pr-1YRVLlpUemQNUEGCSVGRv5NJRqEDSKXhzkK5rIRMp102t0-qQyBYcbMWaeuz-7hfp4aBeyjIn4FM_MdtvMgDGsVNOMrz_S4c10_txTflS7O_1cIWVHrwiqVILSOi0ChcUTh5i_y0J1AnIRvMvz5pw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/30 to-transparent"></div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="bg-purple-700 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow">
+                  Mega Group
+                </span>
+<span class="bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold px-2 py-1 rounded-full border border-white/20">
+                  20 &amp; 26 Seater
+                </span>
+</div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-white">
+<div>
+<h3 class="text-sm font-extrabold text-white leading-tight drop-shadow">Force Mega Traveller 20/26S</h3>
+<p class="text-[11px] text-amber-300 font-medium">Wedding Baarat &amp; Large Event Specialist</p>
+</div>
+<div class="bg-slate-900/80 rounded-xl p-3 border border-slate-700/80 space-y-2.5"><div class="flex items-center justify-between"><div><span class="text-[10px] text-slate-400 block font-medium">Official Payee Name:</span><span class="text-xs font-bold text-white tracking-wide">Dhira Tours &amp; Travels / Devang Dhanaliya</span></div><span class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono font-bold">Verified Merchant</span></div><div class="flex items-center justify-between pt-1 border-t border-slate-800"><div><span class="text-[10px] text-slate-400 block font-medium">Official UPI VPA:</span><span class="text-xs font-mono font-bold text-[#e59700] tracking-wide select-all">dhanaliyadevang1995@okhdfcbank</span></div><button class="bg-[#e59700] hover:bg-[#c88300] text-slate-950 px-2.5 py-1.5 rounded-lg text-[10px] font-extrabold flex items-center gap-1 transition" id="copyUpiHomeBtn" onclick="copyUpiTextHome()"><i class="w-3 h-3" data-lucide="copy"></i><span>Copy UPI ID</span></button></div><div class="flex items-center justify-between pt-1 text-[10px] text-slate-400"><div class="flex gap-1.5 font-bold text-[9px]"><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">GPay</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">PhonePe</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">Paytm</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">BHIM</span></div><div class="flex items-center gap-1"><span class="text-slate-300 font-semibold">Advance to lock:</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹2,000</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹3,000</span></div></div></div>
+</div>
+</div>
+<!-- Card Body -->
+<div class="p-3.5 space-y-3">
+<p class="text-xs text-slate-600 leading-snug">
+                Ideal for Wedding Baarat, School / College tours &amp; Corporate offsites. Features high roof headroom and extra large rear boot for heavy luggage.
+              </p>
+<!-- Amenities Pills -->
+<div class="grid grid-cols-4 gap-1.5 text-center text-[10px] font-semibold text-slate-700">
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-purple-600 mb-0.5" data-lucide="package"></i>
+<span>Mega Boot</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-blue-600 mb-0.5" data-lucide="users"></i>
+<span>26 Capacity</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-sky-600 mb-0.5" data-lucide="wind"></i>
+<span>High-Cool AC</span>
+</div>
+<div class="bg-slate-50 p-1.5 rounded-lg border border-slate-200 flex flex-col items-center">
+<i class="w-3.5 h-3.5 text-amber-600 mb-0.5" data-lucide="music-2"></i>
+<span>PA Mic/Audio</span>
+</div>
+</div>
+<!-- Pricing Highlight Box -->
+<div class="bg-amber-50/70 rounded-xl p-2.5 border border-amber-200/80 flex items-center justify-between text-xs"><div>
+<span class="text-slate-500 block text-[10px]">Local Package (8h / 80km)</span>
+<strong class="text-slate-900 font-extrabold text-sm">₹8,800</strong>
+</div>
+<div class="text-right">
+<span class="text-slate-500 block text-[10px]">Driver Allowance</span>
+<strong class="text-slate-900 font-bold">₹1,200 / Day</strong>
+</div></div>
+<!-- Action CTAs -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20I%20want%20to%20book%20the%20Force%2020-26%20Seater%20Traveller%20(%E2%82%B932%2Fkm%2C%20Local%20%E2%82%B98800)." target="_blank">
+<i class="w-4 h-4 fill-white" data-lucide="message-circle"></i>
+<span>WhatsApp</span>
+</a>
+<a class="bg-[#0f1e36] hover:bg-slate-900 text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="tel:+918450935225">
+<i class="w-3.5 h-3.5 text-[#e59700]" data-lucide="phone"></i>
+<span>Call Chauffeur</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- POPULAR OUTSTATION ROUTES FROM MUMBAI -->
+<div class="px-4 pt-4">
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<i class="w-4 h-4 text-[#e59700]" data-lucide="map-pin"></i>
+<h3 class="text-xs font-extrabold text-slate-900 uppercase tracking-wide">Popular Mumbai Outstation Routes</h3>
+</div>
+<span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+              Chauffeur Driven
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-xs">
+<a class="p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50/60 border border-slate-200 transition flex items-center justify-between" href="https://wa.me/918450935225?text=Quotation%20for%20Mumbai%20to%20Shirdi%20round%20trip" target="_blank">
+<div>
+<span class="font-bold text-slate-900 block">Mumbai ⇄ Shirdi</span>
+<span class="text-[10px] text-slate-500">2 Days (500 km)</span>
+</div>
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="chevron-right"></i>
+</a>
+<a class="p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50/60 border border-slate-200 transition flex items-center justify-between" href="https://wa.me/918450935225?text=Quotation%20for%20Mumbai%20to%20Mahabaleshwar%20trip" target="_blank">
+<div>
+<span class="font-bold text-slate-900 block">Mumbai ⇄ Mahabaleshwar</span>
+<span class="text-[10px] text-slate-500">3 Days (580 km)</span>
+</div>
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="chevron-right"></i>
+</a>
+<a class="p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50/60 border border-slate-200 transition flex items-center justify-between" href="https://wa.me/918450935225?text=Quotation%20for%20Mumbai%20to%20Pune%20one-way%2Fround-trip" target="_blank">
+<div>
+<span class="font-bold text-slate-900 block">Mumbai ⇄ Pune / Lonavala</span>
+<span class="text-[10px] text-slate-500">1 or 2 Days Express</span>
+</div>
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="chevron-right"></i>
+</a>
+<a class="p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50/60 border border-slate-200 transition flex items-center justify-between" href="https://wa.me/918450935225?text=Quotation%20for%20Mumbai%20to%20Nashik%20Trimbakeshwar%20trip" target="_blank">
+<div>
+<span class="font-bold text-slate-900 block">Mumbai ⇄ Nashik / Trimbak</span>
+<span class="text-[10px] text-slate-500">2 Days Wine &amp; Temple</span>
+</div>
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="chevron-right"></i>
+</a>
+<a class="p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50/60 border border-slate-200 transition flex items-center justify-between col-span-2" href="https://wa.me/918450935225?text=Quotation%20for%20Mumbai%20to%20Goa%20Tempo%20Traveller%20hire" target="_blank">
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-emerald-600" data-lucide="palmtree"></i>
+<div>
+<span class="font-bold text-slate-900 block">Mumbai ⇄ Goa Road Trip Specialist</span>
+<span class="text-[10px] text-slate-500">Special Interstate Tourist Permit included</span>
+</div>
+</div>
+<i class="w-3.5 h-3.5 text-slate-400" data-lucide="chevron-right"></i>
+</a>
+</div>
+</div>
+</div>
+<!-- QUICK ADVANCE BOOKING VIA UPI -->
+<div class="px-4 pt-4">
+<div class="bg-gradient-to-br from-[#0f1e36] to-[#152745] rounded-2xl p-4 text-white shadow-lg space-y-3 border border-slate-700">
 <div class="flex items-center justify-between">
 <div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[20px] text-secondary-container">tune</span>
-<span class="font-label-md text-label-md text-on-primary font-medium">Diagnostic Live Simulator</span>
+<div class="w-7 h-7 rounded-lg bg-[#e59700] text-slate-950 flex items-center justify-center font-black">
+                ₹
+              </div>
+<div>
+<h3 class="text-xs font-bold uppercase tracking-wider text-amber-300">Quick Advance Booking via UPI</h3>
+<p class="text-[10px] text-slate-300">Lock your Tempo Traveller date instantly</p>
 </div>
-<span class="bg-surface-container-lowest/15 text-on-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm" id="simulator-status-badge">Idle Ready</span>
 </div>
-<p class="font-body-sm text-body-sm text-on-primary-container">Simulate mobile deep-link intent broadcasts to test operating system protocol handling (tel: and wa.me schemes).</p>
-<div class="grid grid-cols-2 gap-2 pt-1">
-<button class="bg-secondary-container text-on-secondary-container font-label-md text-label-md py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5 shadow hover:opacity-90 active:scale-95 transition-all" id="run-full-ping-btn" type="button">
-<span class="material-symbols-outlined text-[18px]">bolt</span>
-<span>Run Latency Ping</span>
-</button>
-<button class="bg-surface-container-lowest/10 text-on-primary font-label-md text-label-md py-2.5 px-3 rounded-lg flex items-center justify-center gap-1.5 hover:bg-surface-container-lowest/20 active:scale-95 transition-all" id="reset-logs-btn" type="button">
-<span class="material-symbols-outlined text-[18px]">refresh</span>
-<span>Reset Test State</span>
-</button>
+<span class="text-[9px] font-extrabold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 px-2 py-0.5 rounded-full">
+              Instant Confirm
+            </span>
 </div>
-<!-- Realtime Output Terminal -->
-<div class="bg-primary rounded-lg p-space-sm text-surface-bright font-mono text-[11px] leading-tight flex flex-col gap-1" id="diagnostic-terminal">
-<div class="flex items-center justify-between text-on-primary-container font-label-sm text-label-sm pb-1">
-<span>CONSOLE OUTPUT</span>
-<span class="h-2 w-2 rounded-full bg-secondary-fixed-dim"></span>
+<!-- UPI ID & Copy Box -->
+<div class="bg-slate-900/80 rounded-xl p-3 border border-slate-700/80 space-y-2.5"><div class="flex items-center justify-between"><div><span class="text-[10px] text-slate-400 block font-medium">Official Payee Name:</span><span class="text-xs font-bold text-white tracking-wide">Dhira Tours &amp; Travels / Devang Dhanaliya</span></div><span class="text-[9px] bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full font-mono font-bold">Verified Merchant</span></div><div class="flex items-center justify-between pt-1 border-t border-slate-800"><div><span class="text-[10px] text-slate-400 block font-medium">Official UPI VPA:</span><span class="text-xs font-mono font-bold text-[#e59700] tracking-wide select-all">dhanaliyadevang1995@okhdfcbank</span></div><button class="bg-[#e59700] hover:bg-[#c88300] text-slate-950 px-2.5 py-1.5 rounded-lg text-[10px] font-extrabold flex items-center gap-1 transition" id="copyUpiHomeBtn" onclick="copyUpiTextHome()"><i class="w-3 h-3" data-lucide="copy"></i><span>Copy UPI ID</span></button></div><div class="flex items-center justify-between pt-1 text-[10px] text-slate-400"><div class="flex gap-1.5 font-bold text-[9px]"><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">GPay</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">PhonePe</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">Paytm</span><span class="bg-white/10 px-1.5 py-0.5 rounded text-slate-300">BHIM</span></div><div class="flex items-center gap-1"><span class="text-slate-300 font-semibold">Advance to lock:</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹2,000</span><span class="text-amber-300 font-bold bg-[#e59700]/20 px-1.5 py-0.5 rounded">₹3,000</span></div></div></div>
+<div class="flex items-center justify-between pt-1 text-[11px] text-slate-300">
+<span>Nominal Advance: <strong>₹2,000 to ₹3,000</strong></span>
+<button class="text-[#e59700] font-bold hover:underline" onclick="switchTab('tariff')">
+              Compare All Tariffs →
+            </button>
 </div>
-<div class="flex flex-col gap-1 font-body-sm text-label-sm text-primary-fixed" id="log-feed">
-<div>&gt; Host: wa.me / Protocol: URI-Handler v2.1</div>
-<div>&gt; Primary Contact: +918450935225 [Validated E.164 India]</div>
-<div>&gt; Ready for protocol invocation tests.</div>
 </div>
+</div>
+<!-- OFFICE ADDRESS & CONTACT FOOTER PREVIEW -->
+<div class="px-4 pt-4 pb-2">
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-2.5 text-xs text-slate-600">
+<div class="flex items-center gap-2 pb-2 border-b border-slate-100">
+<div class="w-8 h-8 rounded-lg bg-slate-100 text-[#0f1e36] flex items-center justify-center">
+<i class="w-4 h-4 text-[#e59700]" data-lucide="map-pinned"></i>
+</div>
+<div>
+<h4 class="font-extrabold text-slate-900 text-xs">Dhira Tours &amp; Travels - Mumbai Office</h4>
+<p class="text-[10px] text-slate-500">Borivali West Commercial Fleet Hub</p>
+</div>
+</div>
+<p class="text-[11px] leading-relaxed">
+            📍 <strong>Address:</strong> A/601, Gorai Chand Ganga Building, Gorai 1, Borivali West, Mumbai 400092.
+          </p>
+<p class="text-[11px]">
+            📞 <strong>Phone:</strong> <a class="text-slate-900 font-bold hover:text-[#e59700]" href="tel:+918450935225">+91 8450935225</a>
+</p>
+<p class="text-[11px]">
+            ✉️ <strong>Email:</strong> <a class="text-slate-900 font-medium hover:text-[#e59700]" href="mailto:dhiratoursmumbai@gmail.com">dhiratoursmumbai@gmail.com</a>
+</p>
 </div>
 </div>
 </section>
-<!-- Primary Test Cards -->
-<section class="w-full pb-4 flex flex-col gap-3">
-<div class="flex items-center justify-between px-1">
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Core Connectivity Channels</h3>
-<span class="font-label-sm text-label-sm text-secondary font-medium">2 Schemes Active</span>
-</div>
-<!-- Primary WhatsApp Test Card -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
-<div class="flex items-start justify-between">
-<div class="flex items-center gap-2.5">
-<div class="w-10 h-10 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined text-[24px]">chat</span>
-</div>
-<div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-[17px]">WhatsApp Booking Link</h4>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Schema: wa.me/918450935225</span>
-</div>
-</div>
-<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded">HTTP 302 Target</span>
-</div>
-<!-- Message Preview Bubble -->
-<div class="bg-surface-container-low rounded-xl p-3 relative flex flex-col gap-1">
+<!-- ================================================================= -->
+<!-- TAB 2: TRANSPARENT FLEET PRICING & TARIFF TABLE -->
+<!-- ================================================================= -->
+<section class="page-section" id="view-tariff">
+<div class="p-4 space-y-3">
+<!-- Header info -->
 <div class="flex items-center justify-between">
-<span class="font-label-sm text-label-sm font-semibold text-secondary flex items-center gap-1">
-<span class="material-symbols-outlined text-[14px]">outgoing_mail</span>
-            Pre-filled Message Preview
+<div>
+<h2 class="text-base font-extrabold text-slate-900">Fleet Pricing &amp; Tariff Sheet</h2>
+<p class="text-xs text-slate-500">Official commercial tariff card for Mumbai rentals</p>
+</div>
+<span class="text-[10px] font-bold bg-[#e59700]/20 text-amber-800 border border-amber-300 px-2 py-1 rounded-full">
+            2025 Rates
           </span>
-<button class="text-on-surface-variant hover:text-on-surface flex items-center gap-1 text-[11px] font-label-sm" id="copy-preview-btn" type="button">
-<span class="material-symbols-outlined text-[14px]">content_copy</span>
-            Copy Payload
-          </button>
 </div>
-<p class="font-body-sm text-body-sm text-on-surface italic bg-surface-container-lowest p-2.5 rounded-lg shadow-sm" id="whatsapp-primary-text">
-          “Hi Dhira Tours, I want to enquire about booking a Tempo Traveller.”
-        </p>
+<!-- Scrollable Comparison Table -->
+<div class="bg-white rounded-2xl border border-slate-200/90 shadow-sm overflow-hidden">
+<div class="p-3 bg-[#0f1e36] text-white flex items-center justify-between">
+<div class="flex items-center gap-2">
+<i class="w-4 h-4 text-[#e59700]" data-lucide="scale"></i>
+<span class="text-xs font-bold uppercase tracking-wider">Force Traveller Rate Comparison</span>
 </div>
-<!-- Actions -->
-<div class="flex flex-col gap-2 pt-1">
-<a class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow hover:bg-primary-container active:scale-[0.98] transition-all" href="https://wa.me/918450935225?text=Hi%20Dhira%20Tours%2C%20I%20want%20to%20enquire%20about%20booking%20a%20Tempo%20Traveller." id="primary-wa-anchor" rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[20px] text-secondary-container">send</span>
-<span>Launch WhatsApp Chat</span>
+<span class="text-[10px] text-slate-300">Scroll table ⇄</span>
+</div>
+<div class="overflow-x-auto table-container">
+<table class="w-full text-left border-collapse text-xs">
+<thead>
+<tr class="bg-slate-100/90 text-slate-700 text-[11px] font-bold uppercase border-b border-slate-200">
+<th class="p-3 whitespace-nowrap sticky left-0 bg-slate-100 z-10">Vehicle Model</th>
+<th class="p-3 whitespace-nowrap">Seating</th>
+<th class="p-3 whitespace-nowrap text-amber-700">Outstation / KM</th>
+<th class="p-3 whitespace-nowrap">Local (8h / 80km)</th>
+<th class="p-3 whitespace-nowrap">Extra KM Rate</th>
+<th class="p-3 whitespace-nowrap">Extra Hour</th>
+<th class="p-3 whitespace-nowrap">Driver Allowance</th>
+<th class="p-3 whitespace-nowrap">AC &amp; Boot Space</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-200 text-[11px]"><tr class="hover:bg-slate-50/80 transition">
+<td class="p-3 font-extrabold text-slate-900 sticky left-0 bg-white whitespace-nowrap shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-amber-500"></span>
+<span>Force 12 Seater Luxury</span>
+</div>
+</td>
+<td class="p-3 whitespace-nowrap font-medium text-slate-700">12 Passengers + 1 Driver</td>
+<td class="p-3 whitespace-nowrap font-black text-slate-900 text-xs">₹24 / km</td>
+<td class="p-3 whitespace-nowrap font-bold text-slate-800">₹6,500</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹24 / km</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹300 / hr</td>
+<td class="p-3 whitespace-nowrap text-slate-700 font-semibold">₹1,200 / day</td>
+<td class="p-3 whitespace-nowrap text-slate-600">Dual Chilled AC • Standard Boot</td>
+</tr>
+<tr class="hover:bg-amber-50/40 transition bg-amber-50/20">
+<td class="p-3 font-extrabold text-slate-900 sticky left-0 bg-white whitespace-nowrap shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#e59700]"></span>
+<span>Force 17 Seater TT</span>
+<span class="text-[9px] bg-[#e59700] text-slate-950 font-black px-1.5 py-0.2 rounded">POPULAR</span>
+</div>
+</td>
+<td class="p-3 whitespace-nowrap font-medium text-slate-700">17 Passengers + 1 Driver</td>
+<td class="p-3 whitespace-nowrap font-black text-slate-900 text-xs">₹26 / km</td>
+<td class="p-3 whitespace-nowrap font-bold text-slate-800">₹7,200</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹26 / km</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹350 / hr</td>
+<td class="p-3 whitespace-nowrap text-slate-700 font-semibold">₹1,200 / day</td>
+<td class="p-3 whitespace-nowrap text-slate-600">High Capacity AC • Medium Boot</td>
+</tr>
+<tr class="hover:bg-slate-50/80 transition">
+<td class="p-3 font-extrabold text-slate-900 sticky left-0 bg-white whitespace-nowrap shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-blue-600"></span>
+<span>Force Urbania VIP</span>
+</div>
+</td>
+<td class="p-3 whitespace-nowrap font-medium text-slate-700">13 / 17 Passengers</td>
+<td class="p-3 whitespace-nowrap font-black text-slate-900 text-xs">₹29 / km</td>
+<td class="p-3 whitespace-nowrap font-bold text-slate-800">₹7,800</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹29 / km</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹400 / hr</td>
+<td class="p-3 whitespace-nowrap text-slate-700 font-semibold">₹1,200 / day</td>
+<td class="p-3 whitespace-nowrap text-slate-600">Individual AC Vents • Dedicated Luggage Bay</td>
+</tr>
+<tr class="hover:bg-slate-50/80 transition">
+<td class="p-3 font-extrabold text-slate-900 sticky left-0 bg-white whitespace-nowrap shadow-[2px_0_5px_-2px_rgba(0,0,0,0.05)]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-purple-600"></span>
+<span>Force 26 Seater Mega</span>
+</div>
+</td>
+<td class="p-3 whitespace-nowrap font-medium text-slate-700">26 Passengers + 1 Driver</td>
+<td class="p-3 whitespace-nowrap font-black text-slate-900 text-xs">₹32 / km</td>
+<td class="p-3 whitespace-nowrap font-bold text-slate-800">₹8,800</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹32 / km</td>
+<td class="p-3 whitespace-nowrap text-slate-600">₹450 / hr</td>
+<td class="p-3 whitespace-nowrap text-slate-700 font-semibold">₹1,200 / day</td>
+<td class="p-3 whitespace-nowrap text-slate-600">Super Cool Roof AC • Extra Large Boot</td>
+</tr></tbody>
+</table>
+</div>
+<!-- Notes / Terms Footnote -->
+<div class="p-3 bg-slate-50 border-t border-slate-200 text-[10px] text-slate-500 space-y-1"><p>• <strong>Outstation Minimum:</strong> 300 km running charged per calendar day.</p><p>• <strong>Toll, State Tax &amp; Parking:</strong> Actual receipts payable by guest or included in all-inclusive custom package.</p><p>• <strong>Driver Night Allowance:</strong> ₹500 applicable if vehicle operates between 10:00 PM and 6:00 AM.</p></div>
+</div>
+<!-- Quick Call to Action from Tariff -->
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-3">
+<h3 class="text-xs font-bold text-slate-900">Need an All-Inclusive Custom Quote?</h3>
+<p class="text-[11px] text-slate-500">We offer customized flat-rate quotes inclusive of Mumbai Sea Link toll, Atal Setu toll, Pune Expressway toll, parking &amp; chauffeur batta.</p>
+<a class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-xs py-3 rounded-xl transition flex items-center justify-center gap-2 shadow-sm" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20please%20send%20me%20an%20all-inclusive%20quote%20for%20my%20trip" target="_blank">
+<i class="w-4 h-4 fill-white" data-lucide="message-circle"></i>
+<span>Get WhatsApp All-Inclusive Quote</span>
 </a>
-<button class="w-full bg-surface-container text-on-surface py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high active:scale-[0.98] transition-all" id="simulate-wa-launch-btn" type="button">
-<span class="material-symbols-outlined text-[18px] text-on-surface-variant">science</span>
-<span>Simulate Direct Payload Delivery</span>
-</button>
 </div>
 </div>
-<!-- Primary Phone Dialer Test Card -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
-<div class="flex items-start justify-between">
-<div class="flex items-center gap-2.5">
-<div class="w-10 h-10 rounded-xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
-<span class="material-symbols-outlined text-[24px]">call</span>
+</section>
+<!-- ================================================================= -->
+<!-- TAB 3: LIVE FARE ESTIMATOR -->
+<!-- ================================================================= -->
+<section class="page-section" id="view-calculator">
+<div class="p-4 space-y-3">
+<div>
+<h2 class="text-base font-extrabold text-slate-900">Live Mumbai Fare Calculator</h2>
+<p class="text-xs text-slate-500">Instant transparent estimates with zero hidden fees</p>
+</div>
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-3">
+<div>
+<label class="text-[10px] font-extrabold uppercase text-slate-600 block mb-1">Select Tempo Traveller</label>
+<select class="w-full bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 rounded-xl p-2.5 focus:outline-none focus:border-[#0f1e36]" id="calcVehicleSelect" onchange="runFareCalculation()">
+<option data-adv="2000" data-name="Force 12 Seater Luxury" value="24">Force 12 Seater Luxury - ₹24/km</option>
+<option data-adv="2500" data-name="Force 17 Seater Traveller" selected="" value="26">Force 17 Seater Traveller - ₹26/km (Popular)</option>
+<option data-adv="2500" data-name="Force Urbania Executive" value="29">Force Urbania Executive (13/17S) - ₹29/km</option>
+<option data-adv="3000" data-name="Force Mega 26 Seater" value="32">Force Mega 20/26 Seater - ₹32/km</option>
+</select>
 </div>
 <div>
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-[17px]">Direct Phone Dialer Link</h4>
-<span class="font-label-sm text-label-sm text-on-surface-variant">Schema: tel:+918450935225</span>
+<div class="flex justify-between text-xs font-semibold mb-1">
+<span class="text-slate-600">Estimated Total Distance:</span>
+<span class="font-bold text-slate-900 text-sm" id="calcKmLabel">500 km</span>
+</div>
+<input class="w-full accent-[#e59700] cursor-pointer" id="calcKmSlider" max="1800" min="200" oninput="runFareCalculation()" step="25" type="range" value="500"/>
+<div class="flex justify-between text-[10px] text-slate-500 mt-1">
+<span>200 km</span>
+<span>Min 300 km/day</span>
+<span>1800 km</span>
 </div>
 </div>
-<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded">GSM Direct</span>
-</div>
-<!-- Quick Metrics Grid -->
-<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-2.5 rounded-lg">
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Target Format</span>
-<span class="font-label-md text-label-md font-semibold text-on-surface">E.164 Canonical</span>
-</div>
-<div class="flex flex-col">
-<span class="font-label-sm text-label-sm text-on-surface-variant">Carrier Response</span>
-<span class="font-label-md text-label-md font-semibold text-secondary">Ready / Ringing</span>
-</div>
-</div>
-<!-- Actions -->
-<div class="flex flex-col gap-2 pt-1">
-<a class="w-full bg-secondary-container text-on-secondary-container py-3 rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 shadow hover:opacity-95 active:scale-[0.98] transition-all font-semibold" href="tel:+918450935225" id="primary-tel-anchor">
-<span class="material-symbols-outlined text-[20px]">phone_forwarded</span>
-<span>Direct Call Now (+91 8450935225)</span>
-</a>
-<button class="w-full bg-surface-container text-on-surface py-2 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 hover:bg-surface-container-high active:scale-[0.98] transition-all" id="simulate-call-modal-trigger" type="button">
-<span class="material-symbols-outlined text-[18px] text-on-surface-variant">phone_iphone</span>
-<span>Open Call Handshake Simulator</span>
-</button>
-</div>
-</div>
-</section>
-<!-- Vehicle-Specific Deep Links Testing Grid -->
-<section class="w-full pb-4 flex flex-col gap-3">
-<div class="flex items-center justify-between px-1">
+<div class="grid grid-cols-2 gap-2">
 <div>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Vehicle-Specific WhatsApp Deep Links</h3>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Contextual bookings with custom pre-filled fleet configurations</p>
+<label class="text-[10px] font-extrabold uppercase text-slate-600 block mb-1">Trip Days</label>
+<select class="w-full bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 rounded-xl p-2.5" id="calcDays" onchange="runFareCalculation()">
+<option value="1">1 Day</option>
+<option selected="" value="2">2 Days (Shirdi / Pune)</option>
+<option value="3">3 Days (Mahabaleshwar)</option>
+<option value="4">4 Days (Goa / Konkan)</option>
+<option value="5">5 Days</option>
+</select>
 </div>
-</div>
-<!-- Fleet Deep Link 1: 12S Luxury TT -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-2.5">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[22px]">directions_bus</span>
-<span class="font-label-lg text-label-lg font-semibold text-on-surface">12S Luxury Tempo Traveller</span>
-</div>
-<span class="bg-surface-container-high font-label-sm text-label-sm px-2 py-0.5 rounded text-on-surface font-medium">1x1 Executive</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded text-[13px] font-mono text-on-surface-variant break-all">
-        ?text=Hi%20Dhira%20Tours%2C%20I%20want%20a%20quote%20for%2012%20Seater%20Luxury%20Tempo%20Traveller%20rental.
-      </div>
-<div class="flex items-center gap-2 pt-1">
-<a class="flex-1 bg-primary text-on-primary py-2 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" href="https://wa.me/918450935225?text=Hi%20Dhira%20Tours%2C%20I%20want%20a%20quote%20for%2012%20Seater%20Luxury%20Tempo%20Traveller%20rental." rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px] text-secondary-container">send</span>
-<span>Test 12S Link</span>
-</a>
-<button class="px-3 py-2 bg-surface-container rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="inspectVehiclePayload('12S Luxury TT', 'Hi Dhira Tours, I want a quote for 12 Seater Luxury Tempo Traveller rental.')" type="button">
-          Inspect
-        </button>
-</div>
-</div>
-<!-- Fleet Deep Link 2: 17S Recliner TT -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-2.5">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[22px]">airline_seat_recline_extra</span>
-<span class="font-label-lg text-label-lg font-semibold text-on-surface">17S Recliner Tempo Traveller</span>
-</div>
-<span class="bg-surface-container-high font-label-sm text-label-sm px-2 py-0.5 rounded text-on-surface font-medium">Family &amp; Outstation</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded text-[13px] font-mono text-on-surface-variant break-all">
-        ?text=Hello%20Dhira%20Tours%2C%20need%2017%20Seater%20Recliner%20Tempo%20Traveller%20rates%20with%20driver.
-      </div>
-<div class="flex items-center gap-2 pt-1">
-<a class="flex-1 bg-primary text-on-primary py-2 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20need%2017%20Seater%20Recliner%20Tempo%20Traveller%20rates%20with%20driver." rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px] text-secondary-container">send</span>
-<span>Test 17S Link</span>
-</a>
-<button class="px-3 py-2 bg-surface-container rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="inspectVehiclePayload('17S Recliner TT', 'Hello Dhira Tours, need 17 Seater Recliner Tempo Traveller rates with driver.')" type="button">
-          Inspect
-        </button>
-</div>
-</div>
-<!-- Fleet Deep Link 3: Force Urbania Executive -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-2.5">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[22px]">stars</span>
-<span class="font-label-lg text-label-lg font-semibold text-on-surface">Force Urbania Executive</span>
-</div>
-<span class="bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded font-medium">VIP Monocoque</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded text-[13px] font-mono text-on-surface-variant break-all">
-        ?text=Hi%2C%20requesting%20Force%20Urbania%20VIP%20van%20booking%20details%20from%20Mumbai%20airport.
-      </div>
-<div class="flex items-center gap-2 pt-1">
-<a class="flex-1 bg-primary text-on-primary py-2 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" href="https://wa.me/918450935225?text=Hi%2C%20requesting%20Force%20Urbania%20VIP%20van%20booking%20details%20from%20Mumbai%20airport." rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px] text-secondary-container">send</span>
-<span>Test Urbania Link</span>
-</a>
-<button class="px-3 py-2 bg-surface-container rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="inspectVehiclePayload('Force Urbania Executive', 'Hi, requesting Force Urbania VIP van booking details from Mumbai airport.')" type="button">
-          Inspect
-        </button>
-</div>
-</div>
-<!-- Fleet Deep Link 4: 20/26S Mega Group -->
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-2.5">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[22px]">groups</span>
-<span class="font-label-lg text-label-lg font-semibold text-on-surface">20/26S Mega Group Coach</span>
-</div>
-<span class="bg-surface-container-high font-label-sm text-label-sm px-2 py-0.5 rounded text-on-surface font-medium">Wedding / Corporate</span>
-</div>
-<div class="bg-surface-container-low p-2 rounded text-[13px] font-mono text-on-surface-variant break-all">
-        ?text=Namaste%20Dhira%20Tours%2C%20need%20mega%20group%20bus%20rental%20(20%2F26%20seater)%20itinerary%20quote.
-      </div>
-<div class="flex items-center gap-2 pt-1">
-<a class="flex-1 bg-primary text-on-primary py-2 px-3 rounded-lg font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-all" href="https://wa.me/918450935225?text=Namaste%20Dhira%20Tours%2C%20need%20mega%20group%20bus%20rental%20(20%2F26%20seater)%20itinerary%20quote." rel="noopener noreferrer" target="_blank">
-<span class="material-symbols-outlined text-[16px] text-secondary-container">send</span>
-<span>Test 26S Link</span>
-</a>
-<button class="px-3 py-2 bg-surface-container rounded-lg text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="inspectVehiclePayload('20/26S Mega Coach', 'Namaste Dhira Tours, need mega group bus rental (20/26 seater) itinerary quote.')" type="button">
-          Inspect
-        </button>
-</div>
-</div>
-</section>
-<!-- Pre-filled Message Template Inspector -->
-<section class="w-full pb-4">
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
-<div class="flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-secondary text-[22px]">data_object</span>
-<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Message Template Inspector</h3>
-</div>
-<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded font-medium">Live Audit</span>
-</div>
-<div class="flex flex-col gap-2">
-<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">Active Test Text Payload</label>
-<textarea class="w-full bg-surface-container-low text-on-surface font-body-sm text-body-sm p-3 rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-all" id="custom-message-input" rows="2">Hi Dhira Tours, I want to enquire about booking a Tempo Traveller.</textarea>
-</div>
-<!-- Verification Specs Grid -->
-<div class="space-y-2">
-<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-secondary">flag</span>
-<span class="font-label-sm text-label-sm text-on-surface font-medium">Country Code Verification</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="font-label-sm text-label-sm font-semibold text-on-surface">+91 (India)</span>
-<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
-</div>
-</div>
-<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-secondary">link</span>
-<span class="font-label-sm text-label-sm text-on-surface font-medium">RFC 3986 URI Encoding</span>
-</div>
-<div class="flex items-center gap-1">
-<span class="font-label-sm text-label-sm font-semibold text-secondary" id="encoding-status">Compliant (%20 Spaces)</span>
-<span class="material-symbols-outlined text-[16px] text-secondary">check_circle</span>
-</div>
-</div>
-<div class="bg-surface-container-low p-2.5 rounded-lg flex items-center justify-between">
-<div class="flex items-center gap-2">
-<span class="material-symbols-outlined text-[18px] text-secondary">format_quote</span>
-<span class="font-label-sm text-label-sm text-on-surface font-medium">Encoded URI Output</span>
-</div>
-<span class="font-mono text-[11px] text-on-surface-variant truncate max-w-[170px]" id="encoded-uri-preview">Hi%20Dhira%20Tours...</span>
-</div>
-</div>
-<!-- Dynamic Test Payload Trigger -->
-<button class="w-full bg-primary text-on-primary py-2.5 rounded-lg font-label-md text-label-md flex items-center justify-center gap-2 hover:bg-primary-container active:scale-95 transition-all" id="update-and-test-btn" type="button">
-<span class="material-symbols-outlined text-[18px]">play_arrow</span>
-<span>Test Custom Payload on +91 8450935225</span>
-</button>
-</div>
-</section>
-<!-- Operational Dispatch & Fleet Visual Framing -->
-<section class="w-full pb-2">
-<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
-<div class="flex items-center justify-between">
-<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold text-[17px]">Verified Fleet Operations</h4>
-<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded font-medium">Mumbai HQ</span>
-</div>
-<!-- Fleet Representative Image Container -->
-<div class="relative w-full h-36 rounded-xl overflow-hidden shadow-sm">
-<div class="bg-cover bg-center w-full h-full" data-alt="A pristine white luxury Force Tempo Traveller parked in front of a modern Mumbai landmark with palm trees during clear golden daylight. Clean reflections, executive commercial livery, spotless chrome rims, professional chauffeur standing attentively next to the open passenger door in crisp uniform, evoking safety, reliability, and high corporate travel standards." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA3FTCdUcesQcr4ES9LvYrP1PI2u_816jZepgwWrYC3xMijxYldCNqd-3AJ1UXoYWAI3f7qR1IDMM7CYOEdQDsT4G0oNFu3qn4sH5drAgg3x-fyElD8fu6sqzTPdgYMDvw4fPIGUHT-gbieXYonQjmRD1YaDk0QV6kMVrCFwZsRDl-WZ0yQQcnpQ9Wf_EuQkPAkS7znyH4RexSyhfXfPcfH2t7S8S__H3PQLF9YCjI-pgqI4H04KVm4jg')"></div>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-3">
-<div class="flex items-center justify-between w-full text-on-primary">
 <div>
-<span class="font-label-md text-label-md font-semibold block">Dhira Fleet Hub Mumbai</span>
-<span class="font-label-sm text-label-sm opacity-80">Andheri, Dadar, Thane, Navi Mumbai</span>
+<label class="text-[10px] font-extrabold uppercase text-slate-600 block mb-1">Toll &amp; Tax Buffer</label>
+<select class="w-full bg-slate-50 border border-slate-200 text-xs font-bold text-slate-900 rounded-xl p-2.5" id="calcToll" onchange="runFareCalculation()">
+<option value="0">Toll at actuals (Guest pays)</option>
+<option selected="" value="1200">Add Toll Buffer (₹1,200)</option>
+</select>
 </div>
-<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-1 rounded font-semibold">Ready to Roll</span>
 </div>
 </div>
+<!-- Fare Breakdown Card -->
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-2.5">
+<h3 class="text-xs font-extrabold uppercase text-slate-600 tracking-wider">Estimated Fare Summary</h3>
+<div class="space-y-1.5 text-xs text-slate-700">
+<div class="flex justify-between">
+<span>Running Cost (<span id="summaryKm">500</span> km × ₹<span id="summaryRate">26</span>):</span>
+<span class="font-semibold text-slate-900" id="summaryBase">₹13,000</span>
 </div>
-<!-- Fleet Service Checklist -->
-<div class="grid grid-cols-2 gap-2 pt-1">
-<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">done_all</span>
-<span>Fastag Equipped</span>
+<div class="flex justify-between"><span>Driver Allowance (<span id="summaryDays">2</span> days × ₹1,200):</span>
+<span class="font-semibold text-slate-900" id="summaryDriver">₹2,400</span></div>
+<div class="flex justify-between">
+<span>Toll / Tax Estimate:</span>
+<span class="font-semibold text-slate-900" id="summaryToll">₹1,200</span>
 </div>
-<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">done_all</span>
-<span>Clean Pushback Seats</span>
 </div>
-<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">done_all</span>
-<span>Chauffeur Police Verified</span>
+<div class="pt-3 border-t border-slate-100 flex items-center justify-between">
+<div>
+<span class="text-[10px] text-slate-500 block uppercase font-bold">Estimated Trip Total</span>
+<span class="text-xl font-black text-[#0f1e36]" id="summaryTotal">₹16,600</span>
 </div>
-<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
-<span class="material-symbols-outlined text-[16px] text-secondary">done_all</span>
-<span>Luggage Carrier Fitted</span>
+<div class="text-right">
+<span class="text-[10px] text-slate-500 block font-semibold">Booking Advance</span>
+<span class="text-sm font-bold text-[#e59700]" id="summaryAdv">₹2,500</span>
+</div>
+</div>
+<button class="w-full mt-2 bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-xs py-3 rounded-xl transition flex items-center justify-center gap-1.5 shadow-sm" onclick="bookCalculatedOnWhatsApp()">
+<i class="w-4 h-4 fill-white" data-lucide="message-circle"></i>
+<span>Confirm Fare on WhatsApp</span>
+</button>
+</div>
+</div>
+</section>
+<!-- ================================================================= -->
+<!-- TAB 4: ADVANCE UPI & BOOKING CHECKOUT -->
+<!-- ================================================================= -->
+<section class="page-section" id="view-checkout">
+<div class="p-4 space-y-3.5">
+<div>
+<h2 class="text-base font-extrabold text-slate-900">Instant Advance UPI Booking</h2>
+<p class="text-xs text-slate-500">Lock your Force vehicle directly with official VPA</p>
+</div>
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-xs font-extrabold text-slate-900">Official Merchant UPI</span>
+<span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
+              0% UPI Fee
+            </span>
+</div>
+<!-- Dynamic Live UPI QR Code Expanded -->
+<div class="bg-slate-50 rounded-xl p-3 border border-slate-200 text-center space-y-2">
+<div class="flex items-center justify-between text-[11px] font-semibold text-slate-600 px-1">
+<span>Scan via GPay / PhonePe / Paytm</span>
+<span class="text-emerald-700 font-mono text-[10px] font-bold">Verified VPA</span>
+</div>
+<!-- SVG QR Code Vector with Rupee Emblem -->
+<div class="bg-white p-3 rounded-xl inline-block shadow-sm border border-slate-200">
+<svg class="w-40 h-40 mx-auto" fill="none" viewbox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+<rect fill="white" height="100" width="100"></rect>
+<!-- Top-Left Finder Pattern -->
+<rect fill="none" height="24" stroke="#0f1e36" stroke-width="4" width="24" x="10" y="10"></rect>
+<rect fill="#0f1e36" height="12" width="12" x="16" y="16"></rect>
+<!-- Top-Right Finder Pattern -->
+<rect fill="none" height="24" stroke="#0f1e36" stroke-width="4" width="24" x="66" y="10"></rect>
+<rect fill="#0f1e36" height="12" width="12" x="72" y="16"></rect>
+<!-- Bottom-Left Finder Pattern -->
+<rect fill="none" height="24" stroke="#0f1e36" stroke-width="4" width="24" x="10" y="66"></rect>
+<rect fill="#0f1e36" height="12" width="12" x="16" y="72"></rect>
+<!-- Simulated QR grid points -->
+<rect fill="#0f1e36" height="6" width="6" x="40" y="12"></rect>
+<rect fill="#0f1e36" height="6" width="6" x="52" y="12"></rect>
+<rect fill="#0f1e36" height="6" width="8" x="44" y="24"></rect>
+<rect fill="#0f1e36" height="6" width="8" x="12" y="44"></rect>
+<rect fill="#0f1e36" height="12" width="6" x="26" y="40"></rect>
+<rect fill="#0f1e36" height="6" width="10" x="66" y="44"></rect>
+<rect fill="#0f1e36" height="8" width="8" x="80" y="40"></rect>
+<rect fill="#0f1e36" height="10" width="6" x="40" y="66"></rect>
+<rect fill="#0f1e36" height="6" width="8" x="54" y="70"></rect>
+<rect fill="#0f1e36" height="8" width="8" x="68" y="66"></rect>
+<rect fill="#0f1e36" height="8" width="6" x="82" y="78"></rect>
+<!-- Central Rupee badge -->
+<circle cx="50" cy="50" fill="#0f1e36" r="11"></circle>
+<text fill="#e59700" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" x="50" y="55">₹</text>
+</svg>
+<div class="mt-1.5 inline-block bg-slate-100 text-slate-900 text-[10px] font-bold px-3 py-0.5 rounded-full border border-slate-200">
+                VPA: dhanaliyadevang1995@okhdfcbank
+              </div>
+</div>
+<!-- UPI Action Links -->
+<div class="flex items-center justify-center gap-2 pt-1">
+<button class="text-[11px] font-bold text-slate-700 bg-white px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 flex items-center gap-1" id="copyUpiCheckoutBtn" onclick="copyUpiTextCheckout()">
+<i class="w-3.5 h-3.5" data-lucide="copy"></i>
+<span id="copyUpiCheckoutText">Copy UPI ID</span>
+</button>
+<a class="text-[11px] font-bold text-slate-700 bg-white px-3 py-1.5 rounded-lg border border-slate-200 hover:bg-slate-100 flex items-center gap-1" href="upi://pay?pa=dhanaliyadevang1995@okhdfcbank&amp;pn=DhiraTours&amp;cu=INR">
+<i class="w-3.5 h-3.5" data-lucide="external-link"></i>
+<span>Open UPI App</span>
+</a>
+</div>
+</div>
+<!-- Send Screenshot to WhatsApp CTA -->
+<div class="p-3 bg-emerald-50 rounded-xl border border-emerald-200 space-y-2">
+<div class="flex items-center gap-2 text-emerald-900 font-bold text-xs">
+<i class="w-4 h-4 text-emerald-600" data-lucide="check-circle"></i>
+<span>Paid the Advance?</span>
+</div>
+<p class="text-[11px] text-emerald-800 leading-tight">
+              Please share the transaction screenshot on WhatsApp with your pickup address &amp; dates to receive your driver dossier immediately.
+            </p>
+<a class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold py-2.5 px-3 rounded-xl flex items-center justify-center gap-1.5 transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20I%20have%20transferred%20the%20advance%20payment%20via%20UPI.%20Here%20are%20my%20trip%20details%3A" target="_blank">
+<i class="w-3.5 h-3.5" data-lucide="share-2"></i>
+<span>Send Screenshot to WhatsApp (+91 8450935225)</span>
+</a>
 </div>
 </div>
 </div>
 </section>
-<!-- Interactive Call Handshake Simulator Modal / Overlay -->
-<div class="fixed inset-0 z-50 bg-primary/60 backdrop-blur-sm flex items-end justify-center p-4 transition-opacity duration-200 opacity-0 pointer-events-none" id="call-simulator-modal">
-<div class="bg-surface-container-lowest w-full max-w-sm rounded-2xl p-space-lg flex flex-col gap-4 shadow-xl transform transition-transform duration-200 translate-y-4">
-<div class="flex items-center justify-between pb-1">
-<div class="flex items-center gap-2">
-<div class="w-8 h-8 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary">
-<span class="material-symbols-outlined text-[18px]">ring_volume</span>
+<!-- ================================================================= -->
+<!-- TAB 5: CONTACT & MUMBAI OFFICE DIRECTORY -->
+<!-- ================================================================= -->
+<section class="page-section" id="view-contact">
+<div class="p-4 space-y-3">
+<div>
+<h2 class="text-base font-extrabold text-slate-900">Contact Mumbai Head Office</h2>
+<p class="text-xs text-slate-500">Dhira Tours &amp; Travels fleet dispatch &amp; booking</p>
 </div>
-<span class="font-headline-sm text-headline-sm text-on-surface font-semibold text-[17px]">Call Handshake Test</span>
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-amber-100 text-[#0f1e36] flex items-center justify-center">
+<i class="w-5 h-5 text-[#e59700]" data-lucide="phone-call"></i>
 </div>
-<button class="text-on-surface-variant hover:text-on-surface" id="close-modal-btn" type="button">
-<span class="material-symbols-outlined text-[20px]">close</span>
-</button>
-</div>
-<div class="flex flex-col items-center text-center gap-1 py-2">
-<span class="text-[12px] uppercase font-label-sm text-secondary font-semibold">Simulated Outgoing Request</span>
-<span class="font-headline-md text-headline-md font-bold text-on-surface">+91 8450935225</span>
-<span class="font-body-sm text-body-sm text-on-surface-variant">Dhira Tours &amp; Travels Central Desk</span>
-<div class="mt-3 flex items-center gap-1.5 text-secondary-container bg-primary-container px-3 py-1 rounded-full text-[12px] font-medium">
-<span class="h-2 w-2 rounded-full bg-secondary-container animate-pulse"></span>
-<span>Handshake Validated: Tel-Handler 200 OK</span>
+<div>
+<h3 class="text-xs font-bold text-slate-900">Direct Chauffeur Booking Line</h3>
+<p class="text-[11px] text-slate-500">Available 24 hours for immediate pickup</p>
 </div>
 </div>
-<div class="flex flex-col gap-2">
-<a class="w-full bg-secondary-container text-on-secondary-container py-3 rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 font-semibold shadow" href="tel:+918450935225">
-<span class="material-symbols-outlined text-[20px]">call</span>
-<span>Confirm Call Handshake</span>
-</a>
-<button class="w-full bg-surface-container text-on-surface py-2.5 rounded-lg font-label-md text-label-md font-medium" id="dismiss-modal-btn" type="button">
-          Cancel Test
-        </button>
+<a class="block w-full text-center bg-[#0f1e36] hover:bg-slate-900 text-white font-extrabold text-xs py-3 rounded-xl transition" href="tel:+918450935225">
+            📞 Call +91 8450935225
+          </a>
+</div>
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-emerald-100 text-[#25D366] flex items-center justify-center">
+<i class="w-5 h-5" data-lucide="message-square"></i>
+</div>
+<div>
+<h3 class="text-xs font-bold text-slate-900">Official WhatsApp Dispatch</h3>
+<p class="text-[11px] text-slate-500">Instant quotes, photos of actual vehicles</p>
 </div>
 </div>
+<a class="block w-full text-center bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-xs py-3 rounded-xl transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%20Mumbai%2C%20I%20need%20a%20vehicle%20quote" target="_blank">
+            💬 Chat on WhatsApp (+91 8450935225)
+          </a>
 </div>
-<!-- Micro-Feedback Toast Notification -->
-<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-full shadow-lg font-label-md text-label-md flex items-center gap-2 transition-all duration-300 opacity-0 pointer-events-none" id="status-toast">
-<span class="material-symbols-outlined text-[18px] text-secondary-fixed-dim" id="toast-icon">check</span>
-<span id="toast-msg">Payload Copied</span>
+<div class="bg-white rounded-2xl p-4 border border-slate-200/90 shadow-sm space-y-2 text-xs text-slate-700">
+<h3 class="font-extrabold text-slate-900">Registered Commercial Address</h3>
+<p class="leading-relaxed">
+            📍 <strong>Office:</strong> A/601, Gorai Chand Ganga Building, Gorai 1, Borivali West, Mumbai, Maharashtra 400092.
+          </p>
+<p>
+            ✉️ <strong>Official Email:</strong> <a class="text-[#0f1e36] font-bold hover:underline" href="mailto:dhiratoursmumbai@gmail.com">dhiratoursmumbai@gmail.com</a>
+</p>
+<p>
+            ⏱️ <strong>Operating Hours:</strong> 24 Hours • 7 Days a Week
+          </p>
 </div>
 </div>
+</section>
+<!-- ================================================================= -->
+<!-- FLOATING WHATSAPP BUTTON (Always Visible) -->
+<!-- ================================================================= -->
+<!-- ================================================================= -->
+<!-- PERSISTENT APP BOTTOM BAR NAVIGATION -->
+<!-- ================================================================= -->
+<div class="fixed bottom-0 z-50 max-w-[480px] w-full bg-[#0f1e36] text-white border-t border-slate-800 shadow-2xl"><div class="px-3 pt-2 pb-1.5 grid grid-cols-2 gap-2 border-b border-slate-800/80"><a class="bg-[#091322] hover:bg-slate-900 border border-slate-700 text-white font-extrabold text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="tel:+918450935225"><i class="w-3.5 h-3.5 text-[#e59700]" data-lucide="phone"></i><span>Call Now (+91 8450935225)</span></a><a class="bg-[#25D366] hover:bg-[#20bd5a] text-white font-extrabold text-xs py-2 px-3 rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition" href="https://wa.me/918450935225?text=Hello%20Dhira%20Tours%2C%20I%20want%20to%20hire%20a%20Force%20Tempo%20Traveller" target="_blank"><i class="w-3.5 h-3.5 fill-white" data-lucide="message-circle"></i><span>WhatsApp Booking</span></a></div><nav class="px-3 py-1.5 flex justify-between items-center text-slate-400"><button class="nav-item flex flex-col items-center gap-0.5 text-[#e59700] transition" id="nav-home" onclick="switchTab('home')"><i class="w-4 h-4" data-lucide="bus"></i><span class="text-[9px] font-bold">Fleet</span></button><button class="nav-item flex flex-col items-center gap-0.5 hover:text-white transition" id="nav-tariff" onclick="switchTab('tariff')"><i class="w-4 h-4" data-lucide="table"></i><span class="text-[9px] font-bold">Tariff</span></button><button class="nav-item flex flex-col items-center gap-0.5 hover:text-white transition" id="nav-calculator" onclick="switchTab('calculator')"><i class="w-4 h-4" data-lucide="calculator"></i><span class="text-[9px] font-bold">Fare Calc</span></button><button class="nav-item flex flex-col items-center gap-0.5 hover:text-white transition" id="nav-checkout" onclick="switchTab('checkout')"><i class="w-4 h-4" data-lucide="qr-code"></i><span class="text-[9px] font-bold">Pay UPI</span></button><button class="nav-item flex flex-col items-center gap-0.5 hover:text-white transition" id="nav-contact" onclick="switchTab('contact')"><i class="w-4 h-4" data-lucide="map-pin"></i><span class="text-[9px] font-bold">Contact</span></button></nav></div>
+</div>
+<!-- Client Script for Interactive Tabs, Calculation and UPI helpers -->
 <script>
-  // Terminal and Logger Elements
-  const logFeed = document.getElementById('log-feed');
-  const terminal = document.getElementById('diagnostic-terminal');
-  const simBadge = document.getElementById('simulator-status-badge');
-  const toast = document.getElementById('status-toast');
-  const toastMsg = document.getElementById('toast-msg');
-  const customInput = document.getElementById('custom-message-input');
-  const encodedPreview = document.getElementById('encoded-uri-preview');
+    function switchTab(tabName) {
+      document.querySelectorAll('.page-section').forEach(el => el.classList.remove('active'));
+      const target = document.getElementById('view-' + tabName);
+      if (target) {
+        target.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
 
-  function appendLog(msg, isHighlight = false) {
-    if (!logFeed) return;
-    const item = document.createElement('div');
-    const timestamp = new Date().toTimeString().split(' ')[0];
-    item.textContent = `[${timestamp}] ${msg}`;
-    if (isHighlight) {
-      item.className = 'text-secondary-fixed font-semibold';
+      // Update bottom nav highlighting
+      document.querySelectorAll('.nav-item').forEach(btn => {
+        btn.classList.remove('text-[#e59700]');
+        btn.classList.add('text-slate-400');
+      });
+      const activeNav = document.getElementById('nav-' + tabName);
+      if (activeNav) {
+        activeNav.classList.remove('text-slate-400');
+        activeNav.classList.add('text-[#e59700]');
+      }
+
+      if (window.lucide) {
+        lucide.createIcons();
+      }
     }
-    logFeed.appendChild(item);
-    if (logFeed.children.length > 7) {
-      logFeed.removeChild(logFeed.firstChild);
+
+    // Live Fare Calculator logic
+    function runFareCalculation() {
+      const select = document.getElementById('calcVehicleSelect');
+      const selectedOption = select.options[select.selectedIndex];
+      const rate = parseInt(select.value);
+      const adv = parseInt(selectedOption.getAttribute('data-adv'));
+
+      const km = parseInt(document.getElementById('calcKmSlider').value);
+      const days = parseInt(document.getElementById('calcDays').value);
+      const toll = parseInt(document.getElementById('calcToll').value);
+
+      const driverAllowanceRate = (rate >= 29) ? 500 : 400;
+      const baseCost = km * rate;
+      const driverCost = days * driverAllowanceRate;
+      const total = baseCost + driverCost + toll;
+
+      document.getElementById('calcKmLabel').innerText = km + ' km';
+      document.getElementById('summaryKm').innerText = km;
+      document.getElementById('summaryRate').innerText = rate;
+      document.getElementById('summaryBase').innerText = '₹' + baseCost.toLocaleString();
+      document.getElementById('summaryDays').innerText = days;
+      document.getElementById('summaryDriver').innerText = '₹' + driverCost.toLocaleString();
+      document.getElementById('summaryToll').innerText = '₹' + toll.toLocaleString();
+      document.getElementById('summaryTotal').innerText = '₹' + total.toLocaleString();
+      document.getElementById('summaryAdv').innerText = '₹' + adv.toLocaleString();
     }
-  }
 
-  function showToast(message, icon = 'check') {
-    if (!toast || !toastMsg) return;
-    toastMsg.textContent = message;
-    const iconEl = document.getElementById('toast-icon');
-    if (iconEl) iconEl.textContent = icon;
-    toast.classList.remove('opacity-0', 'pointer-events-none');
-    toast.classList.add('opacity-100');
-    setTimeout(() => {
-      toast.classList.remove('opacity-100');
-      toast.classList.add('opacity-0', 'pointer-events-none');
-    }, 2200);
-  }
+    function bookCalculatedOnWhatsApp() {
+      const select = document.getElementById('calcVehicleSelect');
+      const vehicleName = select.options[select.selectedIndex].getAttribute('data-name');
+      const km = document.getElementById('calcKmSlider').value;
+      const days = document.getElementById('calcDays').value;
+      const total = document.getElementById('summaryTotal').innerText;
 
-  // Update URL encoding dynamically when user types
-  function refreshEncoding() {
-    if (!customInput || !encodedPreview) return;
-    const val = customInput.value.trim();
-    const encoded = encodeURIComponent(val);
-    encodedPreview.textContent = encoded.length > 24 ? encoded.substring(0, 24) + '...' : encoded;
-  }
+      const message = `Hello Dhira Tours Mumbai, I would like to book the ${vehicleName} for ${days} days (${km} km). Estimated quotation: ${total}. Please confirm chauffeur availability.`;
+      window.open(`https://wa.me/918450935225?text=${encodeURIComponent(message)}`, '_blank');
+    }
 
-  if (customInput) {
-    customInput.addEventListener('input', refreshEncoding);
-    refreshEncoding();
-  }
-
-  // Latency Ping Button
-  const pingBtn = document.getElementById('run-full-ping-btn');
-  if (pingBtn) {
-    pingBtn.addEventListener('click', () => {
-      simBadge.textContent = 'Testing Pings...';
-      simBadge.className = 'bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded-full font-label-sm text-label-sm font-semibold';
-      appendLog('Initiating DNS resolution & schema availability check...');
-
+    function copyUpiTextHome() {
+      navigator.clipboard.writeText("dhanaliyadevang1995@okhdfcbank");
+      const btn = document.getElementById('copyUpiHomeBtn');
+      btn.innerHTML = `<span>Copied!</span>`;
       setTimeout(() => {
-        appendLog('API Handshake wa.me -> Status 200 (14ms)', true);
-      }, 350);
+        btn.innerHTML = `<i data-lucide="copy" class="w-3 h-3"></i><span>Copy</span>`;
+        lucide.createIcons();
+      }, 2000);
+    }
 
+    function copyUpiTextCheckout() {
+      navigator.clipboard.writeText("dhanaliyadevang1995@okhdfcbank");
+      const label = document.getElementById('copyUpiCheckoutText');
+      label.innerText = "Copied!";
       setTimeout(() => {
-        appendLog('Tel Schema Intent -> Filter: android.intent.action.DIAL (8ms)', true);
-        simBadge.textContent = 'All Passing (100%)';
-        simBadge.className = 'bg-surface-container-lowest/20 text-on-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm font-semibold';
-        showToast('Connectivity Pings Verified (100%)', 'verified');
-      }, 750);
-    });
-  }
-
-  // Reset Logs
-  const resetBtn = document.getElementById('reset-logs-btn');
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      if (!logFeed) return;
-      logFeed.innerHTML = `
-        <div>&gt; Host: wa.me / Protocol: URI-Handler v2.1</div>
-        <div>&gt; Primary Contact: +918450935225 [Validated E.164 India]</div>
-        <div>&gt; Test buffers cleared. Ready.</div>
-      `;
-      simBadge.textContent = 'Idle Ready';
-      simBadge.className = 'bg-surface-container-lowest/15 text-on-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm';
-      showToast('Diagnostic logs refreshed', 'refresh');
-    });
-  }
-
-  // Copy Preview Payload
-  const copyBtn = document.getElementById('copy-preview-btn');
-  if (copyBtn) {
-    copyBtn.addEventListener('click', () => {
-      const text = document.getElementById('whatsapp-primary-text')?.innerText || '';
-      navigator.clipboard?.writeText(text.replace(/^[“”]|["”]$/g, ''));
-      appendLog('Copied primary message payload to clipboard.');
-      showToast('Payload copied to clipboard!');
-    });
-  }
-
-  // Simulate Direct Payload
-  const simWaBtn = document.getElementById('simulate-wa-launch-btn');
-  if (simWaBtn) {
-    simWaBtn.addEventListener('click', () => {
-      appendLog('Triggered Simulated WhatsApp Launch payload -> Target: +918450935225', true);
-      showToast('Simulation: WhatsApp scheme opened');
-    });
-  }
-
-  // Custom inspect payload callback
-  window.inspectVehiclePayload = function(modelName, template) {
-    if (customInput) {
-      customInput.value = template;
-      refreshEncoding();
+        label.innerText = "Copy UPI ID";
+      }, 2000);
     }
-    appendLog(`Loaded fleet template: ${modelName}`);
-    showToast(`Loaded ${modelName} payload into Inspector`, 'data_object');
-  };
 
-  // Dynamic Custom Payload Test
-  const updateTestBtn = document.getElementById('update-and-test-btn');
-  if (updateTestBtn) {
-    updateTestBtn.addEventListener('click', () => {
-      const msg = encodeURIComponent(customInput?.value || '');
-      const testUrl = `https://wa.me/918450935225?text=${msg}`;
-      appendLog(`Dispatching custom deep-link -> ${testUrl.substring(0, 38)}...`, true);
-      window.open(testUrl, '_blank');
+    // Initialize lucide icons and default fare calc
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+      runFareCalculation();
     });
-  }
-
-  // Call Handshake Simulator Modal handling
-  const modal = document.getElementById('call-simulator-modal');
-  const openModalBtn = document.getElementById('simulate-call-modal-trigger');
-  const closeModalBtn = document.getElementById('close-modal-btn');
-  const dismissModalBtn = document.getElementById('dismiss-modal-btn');
-
-  function openCallModal() {
-    if (!modal) return;
-    modal.classList.remove('opacity-0', 'pointer-events-none');
-    modal.classList.add('opacity-100');
-    const innerCard = modal.firstElementChild;
-    if (innerCard) {
-      innerCard.classList.remove('translate-y-4');
-      innerCard.classList.add('translate-y-0');
-    }
-    appendLog('Modal opened: Call Handshake GSM simulation');
-  }
-
-  function closeCallModal() {
-    if (!modal) return;
-    const innerCard = modal.firstElementChild;
-    if (innerCard) {
-      innerCard.classList.remove('translate-y-0');
-      innerCard.classList.add('translate-y-4');
-    }
-    modal.classList.remove('opacity-100');
-    modal.classList.add('opacity-0', 'pointer-events-none');
-  }
-
-  if (openModalBtn) openModalBtn.addEventListener('click', openCallModal);
-  if (closeModalBtn) closeModalBtn.addEventListener('click', closeCallModal);
-  if (dismissModalBtn) dismissModalBtn.addEventListener('click', closeCallModal);
-</script></main></body></html>
+  </script>
+</body></html>
